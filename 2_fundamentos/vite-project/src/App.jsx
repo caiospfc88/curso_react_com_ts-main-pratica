@@ -11,6 +11,12 @@ import PaiFunction from "./components/PaiFunction";
 import Form from "./components/Form";
 import RenderCondicional from "./components/RenderCondicional";
 import LoginButton from "./components/LoginButton";
+import Warning from "./components/Warning";
+import NumberList from "./components/NumberList";
+import ButtonEstilizado from "./components/ButtonEstilizado";
+import BotaoAzul from "./components/BotaoAzul";
+import Greeting from "./components/Greeting";
+import CounterIdiota from "./components/CounterIdiota";
 
 function App() {
   return (
@@ -40,6 +46,15 @@ function App() {
       {/*6.12 Expressão ternaria */}
       <LoginButton LoggedIn={false} />
       {/*6.13 Render nulo */}
+      <Warning warning={"teste"} />
+      {/*6.14 Listas Chaves */}
+      <NumberList numbers={[1, 2, 3, 4, 5]} />
+      {/*6.15 Estilos por atributo */}
+      <ButtonEstilizado />
+      {/*6.16 Estilos Globais */}
+      <BotaoAzul />
+      <Greeting name="João" />
+      <CounterIdiota />
     </>
   );
 }
