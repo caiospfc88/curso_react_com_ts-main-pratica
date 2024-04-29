@@ -57,12 +57,11 @@ function App() {
       <Greeting name="João" />
       <CounterIdiota />
       <TaskList
-        list={[{ id: 0, task: "teste" }]}
-        /*list={[
+        list={[
           { id: 0, task: "lavar louça" },
           { id: 1, task: "perturbar o André" },
           { id: 2, task: "Pedir ajuda pra ele antes de tentar analisar tudo" },
-        ]}*/
+        ]}
       />
     </>
   );
