@@ -1,35 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import ComponenteFilho from "./components/ComponenteFilho";
+import Contador from "./components/Contador";
+import ExemploUseEffect from "./components/ExemploUseEffect";
+import Timer from "./components/Timer";
+import ValorDoContexto from "./components/ValorDoContexto";
+import { MeuContextoProvider } from "./contexts/MeuContexto";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {/*8.1 - useEffect */}
+      <ExemploUseEffect />
+      <Timer />
+      {/*8.2 - useContext 
+      aplicações de pequeno e médio porte, que precisam transferir o estado entre componentes*/}
+      <MeuContextoProvider>
+        <ComponenteFilho />
+        <ValorDoContexto />
+      </MeuContextoProvider>
+      {/*8.3 - useReducer - estados mais complexos*/}
+      <Contador />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
