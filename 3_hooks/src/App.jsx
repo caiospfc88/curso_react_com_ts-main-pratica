@@ -1,6 +1,7 @@
 import "./App.css";
 import ComponenteFilho from "./components/ComponenteFilho";
 import Contador from "./components/Contador";
+import DisplayWindowSize from "./components/DisplayWindowSize";
 import ExemploUseEffect from "./components/ExemploUseEffect";
 import Timer from "./components/Timer";
 import ValorDoContexto from "./components/ValorDoContexto";
@@ -20,6 +21,8 @@ function App() {
       </MeuContextoProvider>
       {/*8.3 - useReducer - estados mais complexos*/}
       <Contador />
+      {/*8.4 - Custom hook */}
+      <DisplayWindowSize />
     </>
   );
 }
