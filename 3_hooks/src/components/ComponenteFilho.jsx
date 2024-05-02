@@ -7,7 +7,9 @@ const ComponenteFilho = () => {
   return (
     <div>
       <p>{mensagem}</p>
-      <button onClick={() => setMensagem("Nova Mensagem")}>
+      <button
+        onClick={() => setMensagem("Raquel para de olhar para minha tela")}
+      >
         Alterar Mensagem!
       </button>
     </div>
